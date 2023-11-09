@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Disease Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: url('https://blog.mamashealth.com/wp-content/uploads/2018/05/liver.jpg')
+          center/cover fixed no-repeat; /* Replace with the actual image URL */
+        color: white;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background color */
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      header h2 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        background: #333;
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark background color for the footer */
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto; /* Push the footer to the bottom */
+      }
+
+      form {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Intelligent Multiple Disease Prediction</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="diabetes.html">Diabetes</a>
+        <a href="heart.html">Heart</a>
+        <a href="kidney.html">Kidney-stone</a>
+        <a href="liver.html">Liver</a>
+        <a href="Parkinson's.html">Parkinson's</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="Hepatitis C.html">Hepatitis C</a>
+        <a href="stroke.html">Stroke</a>
+      </nav>
+    </header>
+    <h1 style="text-align: center">Liver Disease Predictor</h1>
+
+    <section>
+      <form>
+        <label for="age">Age:</label>
+        <input type="text" id="age" placeholder="Enter the age, e.g., 30" />
+
+        <label for="gender">Gender:</label>
+        <input
+          type="text"
+          id="gender"
+          placeholder="Enter the gender, e.g., Male/Female"
+        />
+
+        <label for="totalBilirubin">Total Bilirubin:</label>
+        <input
+          type="text"
+          id="totalBilirubin"
+          placeholder="Enter the total bilirubin level, e.g., 1.2"
+        />
+
+        <label for="directBilirubin">Direct Bilirubin:</label>
+        <input
+          type="text"
+          id="directBilirubin"
+          placeholder="Enter the direct bilirubin level, e.g., 0.5"
+        />
+
+        <label for="alkalinePhosphotase">Alkaline Phosphotase:</label>
+        <input
+          type="text"
+          id="alkalinePhosphotase"
+          placeholder="Enter the alkaline phosphotase level, e.g., 200"
+        />
+
+        <label for="alamineAminotransferase">Alamine Aminotransferase:</label>
+        <input
+          type="text"
+          id="alamineAminotransferase"
+          placeholder="Enter the alamine aminotransferase level, e.g., 25"
+        />
+
+        <label for="aspartateAminotransferase"
+          >Aspartate Aminotransferase:</label
+        >
+        <input
+          type="text"
+          id="aspartateAminotransferase"
+          placeholder="Enter the aspartate aminotransferase level, e.g., 30"
+        />
+
+        <label for="totalProteins">Total Proteins:</label>
+        <input
+          type="text"
+          id="totalProteins"
+          placeholder="Enter the total proteins level, e.g., 6.8"
+        />
+
+        <label for="albumin">Albumin:</label>
+        <input
+          type="text"
+          id="albumin"
+          placeholder="Enter the albumin level, e.g., 3.5"
+        />
+
+        <label for="albuminGlobulinRatio">Albumin and Globulin Ratio:</label>
+        <input
+          type="text"
+          id="albuminGlobulinRatio"
+          placeholder="Enter the albumin and globulin ratio, e.g., 1.2"
+        />
+
+        <label for="dataset">Dataset:</label>
+        <input
+          type="text"
+          id="dataset"
+          placeholder="Enter the dataset, e.g., 2 for liver disease, 1 for no liver disease"
+        />
+
+        <button type="button">Predict</button>
+      </form>
+    </section>
+
+    <footer>&copy; 2023 Intelligent Disease Prediction</footer>
+  </body>
+</html>

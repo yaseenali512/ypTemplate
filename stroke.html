@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Disease Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: url('https://storage.googleapis.com/kaggle-datasets-images/1120859/1882037/04da2fb7763e553bdf251d5adf6f88d9/dataset-card.jpg?t=2021-01-26-19-57-05')
+          center/cover fixed no-repeat; /* Replace with the actual image URL */
+        color: white;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background color */
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      header h2 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        background: #333;
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark background color for the footer */
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto; /* Push the footer to the bottom */
+      }
+
+      form {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Intelligent Multiple Disease Prediction</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="diabetes.html">Diabetes</a>
+        <a href="heart.html">Heart</a>
+        <a href="kidney.html">Kidney-stone</a>
+        <a href="liver.html">Liver</a>
+        <a href="Parkinson's.html">Parkinson's</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="Hepatitis C.html">Hepatitis C</a>
+        <a href="stroke.html">Stroke</a>
+      </nav>
+    </header>
+    <!-- ... (previous code) ... -->
+    <h1 style="text-align: center">Stroke Predictor</h1>
+
+    <section>
+      <form>
+        <label for="id">ID:</label>
+        <input type="text" id="id" placeholder="Enter ID, e.g., 9046" />
+
+        <label for="gender">Gender:</label>
+        <input
+          type="text"
+          id="gender"
+          placeholder="Enter gender, e.g., Male or Female"
+        />
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" placeholder="Enter age, e.g., 67" />
+
+        <label for="hypertension">Hypertension:</label>
+        <input
+          type="text"
+          id="hypertension"
+          placeholder="Enter hypertension status, e.g., 0 or 1"
+        />
+
+        <label for="heartDisease">Heart Disease:</label>
+        <input
+          type="text"
+          id="heartDisease"
+          placeholder="Enter heart disease status, e.g., 1 or 0"
+        />
+
+        <label for="everMarried">Ever Married:</label>
+        <input
+          type="text"
+          id="everMarried"
+          placeholder="Enter marital status, e.g., Yes or No"
+        />
+
+        <label for="workType">Work Type:</label>
+        <input
+          type="text"
+          id="workType"
+          placeholder="Enter work type, e.g., Private or Self-employed"
+        />
+
+        <label for="residenceType">Residence Type:</label>
+        <input
+          type="text"
+          id="residenceType"
+          placeholder="Enter residence type, e.g., Urban or Rural"
+        />
+
+        <label for="avgGlucoseLevel">Average Glucose Level:</label>
+        <input
+          type="text"
+          id="avgGlucoseLevel"
+          placeholder="Enter average glucose level, e.g., 228.69"
+        />
+
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" placeholder="Enter BMI, e.g., 36.6" />
+
+        <label for="smokingStatus">Smoking Status:</label>
+        <input
+          type="text"
+          id="smokingStatus"
+          placeholder="Enter smoking status, e.g., formerly smoked"
+        />
+
+        <label for="stroke">Stroke:</label>
+        <input
+          type="text"
+          id="stroke"
+          placeholder="Enter stroke status (1 for positive, 0 for negative)"
+        />
+
+        <button type="button" onclick="predictStroke()">Predict</button>
+      </form>
+
+      <div id="result" style="margin-top: 20px"></div>
+    </section>
+
+    <footer>&copy; 2023 Intelligent Disease Prediction</footer>
+
+    <!-- ... (remaining code) ... -->
+  </body>
+</html>

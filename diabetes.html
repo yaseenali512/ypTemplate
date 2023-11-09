@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Disease Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: url('https://cdn-prod.medicalnewstoday.com/content/images/hero/322/322258/322258_1100.jpg')
+          center/cover fixed no-repeat; /* Replace with the actual image URL */
+        color: white;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background color */
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      header h2 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        background: #333;
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark background color for the footer */
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto; /* Push the footer to the bottom */
+      }
+
+      form {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Intelligent Multiple Disease Prediction</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="diabetes.html">Diabetes</a>
+        <a href="heart.html">Heart</a>
+        <a href="kidney.html">Kidney-stone</a>
+        <a href="liver.html">Liver</a>
+        <a href="Parkinson's.html">Parkinson's</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="Hepatitis C.html">Hepatitis C</a>
+        <a href="stroke.html">Stroke</a>
+      </nav>
+    </header>
+    <h1 style="text-align: center">Diabetes Predictor</h1>
+
+    <section>
+      <form>
+        <label for="pregnancies">Pregnancies:</label>
+        <input
+          type="text"
+          id="pregnancies"
+          placeholder="Enter the number of pregnancies, e.g., 2"
+        />
+
+        <label for="glucose">Glucose:</label>
+        <input
+          type="text"
+          id="glucose"
+          placeholder="Enter the glucose level, e.g., 120"
+        />
+
+        <label for="bloodPressure">Blood Pressure:</label>
+        <input
+          type="text"
+          id="bloodPressure"
+          placeholder="Enter the blood pressure, e.g., 80"
+        />
+
+        <label for="skinThickness">Skin Thickness:</label>
+        <input
+          type="text"
+          id="skinThickness"
+          placeholder="Enter the skin thickness, e.g., 25"
+        />
+
+        <label for="insulin">Insulin:</label>
+        <input
+          type="text"
+          id="insulin"
+          placeholder="Enter the insulin level, e.g., 100"
+        />
+
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" placeholder="Enter the BMI, e.g., 25.5" />
+
+        <label for="diabetesPedigree">Diabetes Pedigree Function:</label>
+        <input
+          type="text"
+          id="diabetesPedigree"
+          placeholder="Enter the diabetes pedigree function, e.g., 0.5"
+        />
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" placeholder="Enter the age, e.g., 30" />
+
+        <label for="outcome">Outcome:</label>
+        <input
+          type="text"
+          id="outcome"
+          placeholder="Enter the outcome (1 for diabetic, 0 for non-diabetic)"
+        />
+
+        <button type="button">Predict</button>
+      </form>
+    </section>
+
+    <footer>&copy; 2023 Intelligent Disease Prediction</footer>
+  </body>
+</html>

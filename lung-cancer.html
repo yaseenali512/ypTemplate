@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Disease Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: url('https://thumbs.dreamstime.com/b/c%C3%A1ncer-de-pulm%C3%B3n-m%C3%A9dicamente-ejemplo-d-en-fondo-oscuro-137230671.jpg')
+          center/cover fixed no-repeat; /* Replace with the actual image URL */
+        color: white;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background color */
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      header h2 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        background: #333;
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark background color for the footer */
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto; /* Push the footer to the bottom */
+      }
+
+      form {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Intelligent Multiple Disease Prediction</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="diabetes.html">Diabetes</a>
+        <a href="heart.html">Heart</a>
+        <a href="kidney.html">Kidney-stone</a>
+        <a href="liver.html">Liver</a>
+        <a href="Parkinson's.html">Parkinson's</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="Hepatitis C.html">Hepatitis C</a>
+        <a href="stroke.html">Stroke</a>
+      </nav>
+    </header>
+    <!-- ... (previous code) ... -->
+
+    <h1 style="text-align: center">Lung Cancer Predictor</h1>
+
+    <section>
+      <form>
+        <label for="gender">Gender:</label>
+        <input
+          type="text"
+          id="gender"
+          placeholder="Enter gender, e.g., M or F"
+        />
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" placeholder="Enter age, e.g., 69" />
+
+        <label for="smoking">Smoking:</label>
+        <input
+          type="text"
+          id="smoking"
+          placeholder="Enter smoking status, e.g., 1 or 2"
+        />
+
+        <label for="yellowFingers">Yellow Fingers:</label>
+        <input
+          type="text"
+          id="yellowFingers"
+          placeholder="Enter yellow fingers status, e.g., 2"
+        />
+
+        <label for="anxiety">Anxiety:</label>
+        <input
+          type="text"
+          id="anxiety"
+          placeholder="Enter anxiety status, e.g., 2"
+        />
+
+        <label for="peerPressure">Peer Pressure:</label>
+        <input
+          type="text"
+          id="peerPressure"
+          placeholder="Enter peer pressure status, e.g., 1 or 2"
+        />
+
+        <label for="chronicDisease">Chronic Disease:</label>
+        <input
+          type="text"
+          id="chronicDisease"
+          placeholder="Enter chronic disease status, e.g., 1 or 2"
+        />
+
+        <label for="fatigue">Fatigue:</label>
+        <input
+          type="text"
+          id="fatigue"
+          placeholder="Enter fatigue status, e.g., 2"
+        />
+
+        <label for="allergy">Allergy:</label>
+        <input
+          type="text"
+          id="allergy"
+          placeholder="Enter allergy status, e.g., 1 or 2"
+        />
+
+        <label for="wheezing">Wheezing:</label>
+        <input
+          type="text"
+          id="wheezing"
+          placeholder="Enter wheezing status, e.g., 2"
+        />
+
+        <label for="alcoholConsuming">Alcohol Consuming:</label>
+        <input
+          type="text"
+          id="alcoholConsuming"
+          placeholder="Enter alcohol consuming status, e.g., 2"
+        />
+
+        <label for="coughing">Coughing:</label>
+        <input
+          type="text"
+          id="coughing"
+          placeholder="Enter coughing status, e.g., 2"
+        />
+
+        <label for="shortnessOfBreath">Shortness of Breath:</label>
+        <input
+          type="text"
+          id="shortnessOfBreath"
+          placeholder="Enter shortness of breath status, e.g., 2"
+        />
+
+        <label for="swallowingDifficulty">Swallowing Difficulty:</label>
+        <input
+          type="text"
+          id="swallowingDifficulty"
+          placeholder="Enter swallowing difficulty status, e.g., 2"
+        />
+
+        <label for="chestPain">Chest Pain:</label>
+        <input
+          type="text"
+          id="chestPain"
+          placeholder="Enter chest pain status, e.g., 2"
+        />
+
+        <label for="lungCancer">Lung Cancer:</label>
+        <input
+          type="text"
+          id="lungCancer"
+          placeholder="Enter lung cancer status (YES or NO)"
+        />
+
+        <button type="button" onclick="predictLungCancer()">Predict</button>
+      </form>
+
+      <div id="result" style="margin-top: 20px"></div>
+    </section>
+    <footer>&copy; 2023 Intelligent Disease Prediction</footer>
+  </body>
+</html>

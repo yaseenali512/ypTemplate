@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Disease Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: url('https://media.clinicaladvisor.com/images/2017/03/29/heartillustrationts51811362_1191108.jpg')
+          center/cover fixed no-repeat; /* Replace with the actual image URL */
+        color: white;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background color */
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      header h2 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        background: #333;
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark background color for the footer */
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto; /* Push the footer to the bottom */
+      }
+
+      form {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Intelligent Multiple Disease Prediction</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="diabetes.html">Diabetes</a>
+        <a href="heart.html">Heart</a>
+        <a href="kidney.html">Kidney</a>
+        <a href="liver.html">Liver</a>
+        <a href="Parkinson's.html">Parkinson's</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="Hepatitis C.html">Hepatitis C</a>
+        <a href="stroke.html">Stroke</a>
+      </nav>
+    </header>
+    <!-- ... Previous HTML code ... -->
+
+    <h1 style="text-align: center">Heart Attack</h1>
+
+    <section>
+      <form>
+        <label for="age">Age:</label>
+        <input type="text" id="age" placeholder="Enter age, e.g., 30" />
+
+        <label for="sex">Sex:</label>
+        <input
+          type="text"
+          id="sex"
+          placeholder="Enter sex, e.g., 1 (male) or 0 (female)"
+        />
+
+        <label for="cp">Chest Pain Type (cp):</label>
+        <input
+          type="text"
+          id="cp"
+          placeholder="Enter cp, e.g., 1 (typical angina), 2 (atypical angina), 3 (non-anginal pain), or 4 (asymptomatic)"
+        />
+
+        <label for="trestbps">Resting Blood Pressure (trestbps):</label>
+        <input
+          type="text"
+          id="trestbps"
+          placeholder="Enter trestbps, e.g., 130"
+        />
+
+        <label for="chol">Cholesterol (chol):</label>
+        <input type="text" id="chol" placeholder="Enter chol, e.g., 240" />
+
+        <label for="fbs">Fasting Blood Sugar (fbs):</label>
+        <input
+          type="text"
+          id="fbs"
+          placeholder="Enter fbs, e.g., 1 (high blood sugar) or 0 (normal blood sugar)"
+        />
+
+        <label for="restecg"
+          >Resting Electrocardiographic Results (restecg):</label
+        >
+        <input
+          type="text"
+          id="restecg"
+          placeholder="Enter restecg, e.g., 0 (normal), 1 (abnormality), or 2 (probable or definite left ventricular hypertrophy)"
+        />
+
+        <label for="thalach">Maximum Heart Rate Achieved (thalach):</label>
+        <input
+          type="text"
+          id="thalach"
+          placeholder="Enter thalach, e.g., 170"
+        />
+
+        <label for="exang">Exercise-Induced Angina (exang):</label>
+        <input
+          type="text"
+          id="exang"
+          placeholder="Enter exang, e.g., 1 (yes) or 0 (no)"
+        />
+
+        <label for="oldpeak"
+          >ST Depression Induced by Exercise Relative to Rest (oldpeak):</label
+        >
+        <input
+          type="text"
+          id="oldpeak"
+          placeholder="Enter oldpeak, e.g., 1.5"
+        />
+
+        <label for="slope"
+          >Slope of the Peak Exercise ST Segment (slope):</label
+        >
+        <input
+          type="text"
+          id="slope"
+          placeholder="Enter slope, e.g., 1 (upsloping), 2 (flat), or 3 (downsloping)"
+        />
+
+        <label for="ca">Number of Major Vessels (ca):</label>
+        <input
+          type="text"
+          id="ca"
+          placeholder="Enter ca, e.g., 0, 1, 2, or 3"
+        />
+
+        <label for="thal">Thalassemia (thal):</label>
+        <input
+          type="text"
+          id="thal"
+          placeholder="Enter thal, e.g., 3 (normal), 6 (fixed defect), or 7 (reversible defect)"
+        />
+
+        <label for="target"
+          >Target (1 for heart disease, 0 for no heart disease):</label
+        >
+        <input
+          type="text"
+          id="target"
+          placeholder="Enter target, e.g., 1 or 0"
+        />
+
+        <button type="button">Predict</button>
+      </form>
+    </section>
+
+    <!-- ... Rest of the HTML code ... -->
+
+    <!-- ... Rest of the HTML code ... -->
+
+    <footer>&copy; 2023 Intelligent Disease Prediction</footer>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligent Disease Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: url('http://www.kidneystoner.org/wp-content/uploads/2011/02/stone-5.jpg')
+          center/cover fixed no-repeat;
+        color: white;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      header h2 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background: #333;
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto;
+      }
+
+      form {
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Intelligent Multiple Disease Prediction</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="diabetes.html">Diabetes</a>
+        <a href="heart.html">Heart</a>
+        <a href="kidney.html">Kidney</a>
+        <a href="liver.html">Liver</a>
+        <a href="Parkinson's.html">Parkinson's</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="Hepatitis C.html">Hepatitis C</a>
+        <a href="stroke.html">Stroke</a>
+      </nav>
+    </header>
+    <h1 style="text-align: center">Kidney Stone Predictor</h1>
+
+    <section>
+      <form>
+        <label for="gravity">Specific Gravity:</label>
+        <input
+          type="text"
+          id="gravity"
+          placeholder="Enter specific gravity, e.g., 1.020"
+        />
+
+        <label for="ph">pH Level:</label>
+        <input type="text" id="ph" placeholder="Enter pH level, e.g., 6.5" />
+
+        <label for="osmo">Osmolality:</label>
+        <input
+          type="text"
+          id="osmo"
+          placeholder="Enter osmolality, e.g., 500"
+        />
+
+        <label for="cond">Conductivity:</label>
+        <input
+          type="text"
+          id="cond"
+          placeholder="Enter conductivity, e.g., 200"
+        />
+
+        <label for="urea">Urea Level:</label>
+        <input type="text" id="urea" placeholder="Enter urea level, e.g., 40" />
+
+        <label for="calc">Calcium Level:</label>
+        <input
+          type="text"
+          id="calc"
+          placeholder="Enter calcium level, e.g., 10"
+        />
+
+        <label for="target"
+          >Target (1 for kidney stone, 0 for no kidney stone):</label
+        >
+        <input
+          type="text"
+          id="target"
+          placeholder="Enter target, e.g., 1 or 0"
+        />
+
+        <button type="button">Predict</button>
+      </form>
+    </section>
+
+    <footer>&copy; 2023 Intelligent Disease Prediction</footer>
+  </body>
+</html>
